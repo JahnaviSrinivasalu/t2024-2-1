@@ -1,0 +1,37 @@
+class SmallCalculator:
+
+    def __init__(self, a, b, typeOfOperation):
+        self.a = a
+        self.b = b
+        self.typeOfOperation = typeOfOperation.upper()  
+    
+    def Calce(self):
+         if self.typeOfOperation=="ADDITION":
+                 print(f"{self.a} + {self.b} = {self.a+self.b}")
+         elif self.typeOfOperation=="SUBTRACTION":
+                 print(f"{self.a} - {self.b} = {self.a-self.b}")
+         elif self.typeOfOperation=="MULTIPLICATION":
+                 print(f"{self.a} X {self.b} = {self.a*self.b}")
+         elif self.typeOfOperation=="DIVISION":
+                 if (self.b==0):
+                     print("Error : Divide by zero error.The value of 'b' cannot be zero.Try Again!!!")
+                 else:
+                     print(f"{self.a} / {self.b} = {self.a/self.b}")
+         elif self.typeOfOperation=="MODULUS": 
+                 if (self.b==0):
+                     print("Error : The value of 'b' cannot be zero.Try Again!!")
+                 else:
+                     print(f"{self.a} % {self.b} = {self.a%self.b}")
+         else: 
+                 print("Invalid operation.Try Agian!!!")
+      
+print("-:SMALL CALCULATOR:-")   
+print("-------------------------------------------------------------------------------------------------------------------")     
+a = float(input("Enter a number as the value of a : "))
+b = float(input("Enter a number as the value of b : "))
+typeOfOperation = str(input("Enter the type of operation you want to perform(Addition,Subtraction,Multiplication,Division,Modulus) : "))
+SmallCalculator(a, b, typeOfOperation).Calce()
+print("Thank You.")
+print("___________________________________________________________________________________________________________________")
+
+

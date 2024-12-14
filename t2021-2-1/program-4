@@ -1,0 +1,50 @@
+print("________________________________________________________________________________________________________________\n")
+input=list(map(int,input("Enter the list of numbers : ").split(',')))
+countOne=0
+for i in input:
+    if i%1==0:
+        countOne+=1
+
+countTwo=0
+for i in input:
+    if i%2==0:
+        countTwo+=1
+
+countThree=0
+for i in input:
+    if i%3==0:
+        countThree+=1
+
+countFour=0
+for i in input:
+    if i%4==0:
+        countFour+=1
+
+countFive=0
+for i in input:
+    if i%5==0:
+        countFive+=1
+
+countSix=0
+for i in input:
+    if i%6==0:
+        countSix+=1
+
+countSeven=0
+for i in input:
+    if i%7==0:
+        countSeven+=1
+    
+countEight=0
+for i in input:
+    if i%8==0:
+        countEight+=1
+
+countNine=0
+for i in input:
+    if i%9==0:
+        countNine+=1
+
+print("-: The result is :-")
+print(f"[1:{countOne},2:{countTwo},3:{countThree},4:{countFour},5:{countFive},6:{countSix},7:{countSeven},8:{countEight},9:{countNine}]")
+print("________________________________________________________________________________________________________________")

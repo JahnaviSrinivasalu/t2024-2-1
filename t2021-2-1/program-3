@@ -1,0 +1,15 @@
+print("__________________________________________________________________________________________________________\n")
+a=int(input("Enter a number for the value of 'a' : "))
+b=(2*a)+1
+odd_List=[]
+for i in range(b):
+    if (i%2)!=0:
+        odd_List.append(i)
+if a%2==0:
+    c=a-1
+else:
+    c=a
+print("-: The output is :- ")
+for i in odd_List[:c]:
+    print(i)
+print("Thank You. \n________________________________________________________________________________________________")
